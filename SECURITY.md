@@ -7,8 +7,9 @@
 
 **DO NOT CREATE AN ISSUE**
 
-Instead, please send an email to security@nosana.io and provide your github username so we can add you
-to a new draft security advisory for further discussion.
+Instead, create a new draft security advisory for further discussion at https://github.com/nosana-ci/nosana-programs/blob/main/SECURITY.md.
+
+For questions reach out to security@nosana.io.
 
 For security reasons, DO NOT include attachments or provide detail sufficient for exploitation regarding
 the security issue in this email. Instead, wait for the advisory to be created,
