@@ -16,19 +16,19 @@ mod jobs_program {
     #[cfg(feature = "mainnet")]
     declare_id!("nosJhNRqr2bc9g1nfGDcXXTXvYUmxD4cVwy2pMWhrYM");
     #[cfg(not(feature = "mainnet"))]
-    declare_id!("nosJTmGQxvwXy23vng5UjkTbfv91Bzf9jEuro78dAGR");
+    declare_id!("4nFPjT5MgCtYheCHGACin9S8N56Cg1RTBAhFQv43Ybxb"); // Sol.College devnet lab key (official devnet id not reused)
 }
 
 pub use rewards_program::ID as REWARDS_PROGRAM;
 mod rewards_program {
     use super::*;
-    declare_id!("nosRB8DUV67oLNrL45bo2pFLrmsWPiewe2Lk2DRNYCp");
+    declare_id!("EWdwdb7Jbjd2hSYAUKz5NTTCJSRgkZNH6tbXprAv3LEY"); // Sol.College devnet lab key (official id not reused)
 }
 
 pub use staking_program::ID as STAKING_PROGRAM;
 mod staking_program {
     use super::*;
-    declare_id!("nosScmHY2uR24Zh751PmGj9ww9QRNHewh9H59AfrTJE");
+    declare_id!("qqA8dv9jjMYZJgVKBdiCjSL9MYQviiEN4R93dVuYeJR"); // Sol.College devnet lab key (official id not reused)
 }
 
 pub use pools_program::ID as POOLS_PROGRAM;
@@ -49,7 +49,7 @@ mod nos_token {
     #[cfg(feature = "mainnet")]
     declare_id!("nosXBVoaCTtYdLvKY6Csb4AC8JCdQKKAaWYtx2ZMoo7");
     #[cfg(not(feature = "mainnet"))]
-    declare_id!("devr1BGQndEW5k5zfvG5FsLyZv1Ap73vNgAHcQ9sUVP");
+    declare_id!("GKkroxnqiJvxyVUXKu9BAEttwGkZH5zSn8zvZ5b5fPt7"); // Sol.College devnet lab key (official devnet id not reused)
 }
 
 pub use authority::ID as AUTHORITY;
@@ -58,7 +58,7 @@ mod authority {
     #[cfg(feature = "mainnet")]
     declare_id!("NosanarMxfrZbyCx5CotBVrzxiPcrnhj6ickpX9vRkB");
     #[cfg(not(feature = "mainnet"))]
-    declare_id!("XXXxddiNnmoD2h2LbQYaL76Swi21MaQbtBbRynAdQL8");
+    declare_id!("sZWwGfLUsuZSYW2vkF4RFBgQRQeq1HqXzzWPDPPFWQD"); // Sol.College devnet lab key (official devnet id not reused)
 }
 
 pub use market_admin::ID as MARKET_ADMIN;
@@ -67,7 +67,7 @@ mod market_admin {
     #[cfg(feature = "mainnet")]
     declare_id!("AdmMVMMU3po5BP3bVWsF9GgN6NNEfpfxpTDGTzjgb72S");
     #[cfg(not(feature = "mainnet"))]
-    declare_id!("XXXxddiNnmoD2h2LbQYaL76Swi21MaQbtBbRynAdQL8");
+    declare_id!("sZWwGfLUsuZSYW2vkF4RFBgQRQeq1HqXzzWPDPPFWQD"); // Sol.College devnet lab key (official devnet id not reused)
 }
 
 pub use token_account::ID as TOKEN_ACCOUNT;
@@ -76,7 +76,7 @@ mod token_account {
     #[cfg(feature = "mainnet")]
     declare_id!("A9V8JkR5HihvFpHq1ZbwrpPAGBhsGfeWw5TVcUdGf2dg");
     #[cfg(not(feature = "mainnet"))]
-    declare_id!("HLtABkKqsUjb4ECPEnvad6HN7QYf6ANHahAeZQXrAGgV");
+    declare_id!("Hz8amGzuMqXU9tQbEak2SHXShMahnKhx3LprtwS8Semn"); // Sol.College devnet lab key (official devnet id not reused)
 }
 
 pub use nft_collection::ID as NFT_COLLECTION;
