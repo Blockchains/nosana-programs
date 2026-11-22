@@ -31,7 +31,7 @@ const mint = await getMint(conn, mintKp.publicKey); if (!mint.mintAuthority.equa
 for (const [who, owner, amount] of [['lab authority (staking token account)', authority.publicKey, 0], ['practice node', node.publicKey, 1000], ['practice client', client.publicKey, 10000], ['outsider', outsider.publicKey, 10]]) {
   const ata = await getOrCreateAssociatedTokenAccount(conn, deployer, mintKp.publicKey, owner);
   if (amount && Number(ata.amount) < amount * 1e6 / 2) { const sig = await mintTo(conn, deployer, mintKp.publicKey, ata.address, authority, amount * 1e6); log({ step: `mint ${amount} practice NOS to ${who}`, ok: true, sig }); }
-  if (who.startsWith('lab authority') && ata.address.toBase58() !== LAB.tokenAccount) throw new Error('TOKEN_ACCOUNT mismatch');
+  if (who.startsWith('lab authority') && ata.address.toBase58() !== LAB.authorityAta) throw new Error('TOKEN_ACCOUNT mismatch');
 }
 
 const authSigner = await signer('nosana-authority');
